@@ -8,11 +8,14 @@
 
   <div class="order-summary jumbotron">
     <h4>Thank you for your order kvirani@gmail.com!</h4>
-    <% enhanced_cart.each do |item| %>
+
+    <% enhanced_order.each do |item| %>
       <div>
-        <%= render 'order_details', product: item[:product], quantity: item[:quantity].to_i %>
+      <%= render 'order_details', product: item[:product], quantity: item[:quantity].to_i %>
       </div>
-    <% end %>
+      <% end %>
+
+
     <div>
       total
       <%= humanized_money_with_symbol cart_subtotal_cents / 100.0 %>
