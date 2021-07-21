@@ -1,6 +1,10 @@
 class OrdersController < ApplicationController
 
   def show
+    # redirect_to :root if enhanced_cart == 'true'
+    # puts " THIS IS THE TESTER ---------#{enhanced_cart}"
+    puts 'THIS IS A FUCKING TEEEEEEST'
+    puts enhanced_cart
     @order = Order.find(params[:id])
   end
 
@@ -25,6 +29,7 @@ class OrdersController < ApplicationController
     # empty hash means no products in cart :)
     update_cart({})
   end
+
 
   def perform_stripe_charge
     Stripe::Charge.create(
