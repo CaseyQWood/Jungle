@@ -1,10 +1,6 @@
 class OrdersController < ApplicationController
 
   def show
-    # redirect_to :root if enhanced_cart == 'true'
-    # puts " THIS IS THE TESTER ---------#{enhanced_cart}"
-    puts 'THIS IS A FUCKING TEEEEEEST'
-    puts enhanced_cart
     @order = Order.find(params[:id])
   end
 
@@ -13,7 +9,7 @@ class OrdersController < ApplicationController
     order  = create_order(charge)
 
     if order.valid?
-      empty_cart!
+      # empty_cart!
       redirect_to order, notice: 'Your Order has been placed.'
     else
       redirect_to cart_path, flash: { error: order.errors.full_messages.first }

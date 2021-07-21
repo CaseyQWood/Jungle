@@ -4,8 +4,19 @@
     <h1>Order #<%= @order.id %></h1>
   </header>
 
+ 
+
   <div class="order-summary jumbotron">
-    <h4>Thank you for your order!</h4>
+    <h4>Thank you for your order kvirani@gmail.com!</h4>
+    <% enhanced_cart.each do |item| %>
+      <div>
+        <%= render 'order_details', product: item[:product], quantity: item[:quantity].to_i %>
+      </div>
+    <% end %>
+    <div>
+      total
+      <%= humanized_money_with_symbol cart_subtotal_cents / 100.0 %>
+    </div>
   </div>
 
   <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
