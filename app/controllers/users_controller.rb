@@ -12,6 +12,16 @@ class UsersController < ApplicationController
     end
   end
 
+  def self.authenticate(email, password)
+    @user = User.find_by_email(email)
+    if @user && @user.authenticate(password)
+      @user
+    else
+      nill
+    end
+
+  end
+
   private
 
   def user_params
