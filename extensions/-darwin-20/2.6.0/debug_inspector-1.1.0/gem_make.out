@@ -1,0 +1,15 @@
+current directory: /Users/caseywood/lighthouse/Ruby/jungle/jungle/gems/debug_inspector-1.1.0/ext/debug_inspector
+/Users/caseywood/.rbenv/versions/2.6.6/bin/ruby -I /Users/caseywood/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20210722-37098-1xb2twi.rb extconf.rb
+creating Makefile
+
+current directory: /Users/caseywood/lighthouse/Ruby/jungle/jungle/gems/debug_inspector-1.1.0/ext/debug_inspector
+make "DESTDIR=" clean
+
+current directory: /Users/caseywood/lighthouse/Ruby/jungle/jungle/gems/debug_inspector-1.1.0/ext/debug_inspector
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.bundle
+
+current directory: /Users/caseywood/lighthouse/Ruby/jungle/jungle/gems/debug_inspector-1.1.0/ext/debug_inspector
+make "DESTDIR=" install
+/opt/homebrew/bin/ginstall -c -m 0755 debug_inspector.bundle ./.gem.20210722-37098-98agp1

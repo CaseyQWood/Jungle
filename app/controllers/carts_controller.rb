@@ -3,7 +3,6 @@ class CartsController < ApplicationController
   def show
   end
 
-  puts 'I am HERe'
 
   def add_item
     product_id = params[:product_id].to_s

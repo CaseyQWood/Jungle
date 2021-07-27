@@ -1,0 +1,19 @@
+current directory: /Users/caseywood/lighthouse/Ruby/jungle/jungle/gems/byebug-11.1.3/ext/byebug
+/Users/caseywood/.rbenv/versions/2.6.6/bin/ruby -I /Users/caseywood/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20210722-37098-15hriqw.rb extconf.rb
+creating Makefile
+
+current directory: /Users/caseywood/lighthouse/Ruby/jungle/jungle/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/caseywood/lighthouse/Ruby/jungle/jungle/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/caseywood/lighthouse/Ruby/jungle/jungle/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR=" install
+/opt/homebrew/bin/ginstall -c -m 0755 byebug.bundle ./.gem.20210722-37098-8gvas1/byebug
